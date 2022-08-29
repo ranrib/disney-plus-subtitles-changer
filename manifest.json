@@ -1,0 +1,23 @@
+{
+  "name": "Disney Plus Subtitles Changer",
+  "description": "Change Disney Plus subtitles fonts",
+  "author": "Ran Ribenzaft",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["src/content_script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "images/logo.png",
+    "32": "images/logo.png",
+    "48": "images/logo.png",
+    "128": "images/logo.png"
+  }
+}
